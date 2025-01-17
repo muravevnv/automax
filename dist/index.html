@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="css/style.css" rel="stylesheet">
+      <title>Title</title>
+    </head>
+  <body>
+    <header class="header"> 
+      <div class="container"> <a class="header__logo" href="#"> <img src="./img/logo.svg" alt=""></a>
+        <button class="header__burger js-menu-open" type="button"></button>
+        <div class="header__menu js-menu">
+          <button class="header__menu-close js-menu-close" type="button"></button>
+          <div class="header__region"> 
+            <div class="header__region-current" style="--icon: url('../img/icons/navigation-arrow.svg');">Ангарск</div>
+            <div class="header__region-dropdown"></div>
+          </div>
+          <nav class="header__nav"> 
+            <ul class="header__nav-list"> 
+              <li class="header__nav-item"> <a href="#">Аренда</a></li>
+              <li class="header__nav-item"> <a href="#">Выкуп</a></li>
+              <li class="header__nav-item"> <a href="#">Информация</a></li>
+              <li class="header__nav-item"> <a href="#">Контакты</a></li>
+            </ul>
+          </nav>
+          <div class="header__socials socials"> <a class="socials__item" href="#" style="--icon: url('../img/icons/whatsapp.svg'); --bg-color: #06AF2B"> </a><a class="socials__item" href="#" style="--icon: url('../img/icons/tg.svg'); --bg-color: #2DA6DF"> </a><a class="socials__item" href="#" style="--icon: url('../img/icons/vk.svg'); --bg-color: #0077FF"> </a></div><a class="header__tel" href="tel:+79091234567 " style="--icon: url('../img/icons/tel-ring.svg');">+7 909 123 45 67  </a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <h3 style="margin-bottom: 24px; font-size: 32px; font-weight: 500">Страницы</h3>
+        <ul> 
+          <li> <a href="home.html" style="margin-bottom: 16px;">Главная</a></li>
+        </ul>
+      </div>
+    </main>
+    <footer class="footer"> 
+      <div class="container"> 
+        <div class="footer__inner">
+          <div class="footer__main"> <a class="footer__logo" href="#"><img src="./img/logo.svg" alt=""></a>
+            <div class="footer__contacts"><a class="footer__tel" href="tel:88005552031">8 800 555-20-31</a><a class="footer__email" href="mailto:support@rentex.ru">support@rentex.ru</a>
+              <div class="footer__adress">г. Москва, Нагорный проезд, д. 5</div>
+            </div>
+            <div class="footer__socials"> <a class="footer__socials-link" href="#"> <img src="./img/icons/f-vk.svg" alt=""></a><a class="footer__socials-link" href="#"> <img src="./img/icons/f-tg.svg" alt=""></a><a class="footer__socials-link" href="#"> <img src="./img/icons/f-yt.svg" alt=""></a></div>
+          </div>
+          <div class="footer__col"> 
+            <div class="footer__col-head js-accordeon-mob-item">Автопарк</div>
+            <div class="footer__col-content js-accordeon-mob-content">
+              <nav class="footer__nav"> <a class="footer__nav-link" href="#">Аренда</a><a class="footer__nav-link" href="#">Выкуп</a></nav>
+            </div>
+          </div>
+          <div class="footer__col"> 
+            <div class="footer__col-head js-accordeon-mob-item">Клиентам</div>
+            <div class="footer__col-content js-accordeon-mob-content"> 
+              <nav class="footer__nav"> <a class="footer__nav-link" href="#">Помощь</a><a class="footer__nav-link" href="#">Порядок аренды</a><a class="footer__nav-link" href="#">Порядок выкупа</a><a class="footer__nav-link" href="#">FAQ</a></nav>
+            </div>
+          </div>
+          <div class="footer__col"> 
+            <div class="footer__col-head js-accordeon-mob-item">Информация</div>
+            <div class="footer__col-content js-accordeon-mob-content"> 
+              <nav class="footer__nav"> <a class="footer__nav-link" href="#">О компании</a><a class="footer__nav-link" href="#">Контакты</a><a class="footer__nav-link" href="#">Юридическая информация</a></nav>
+            </div>
+          </div>
+          <div class="footer__bottom"> <a class="footer__bottom-link" href="#">Пользовательское соглашение</a><a class="footer__bottom-link" href="#">Политика конфиденциальности</a></div>
+        </div><a class="footer__btn btn btn--wide" href="#">Выбрать автомобиль</a>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/app.min.js"></script>
+  </body>
+</html>
