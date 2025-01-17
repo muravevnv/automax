@@ -1,0 +1,39 @@
+.about-us {
+  background-color: #F8F8F8;
+ 
+  &__title {
+    margin-bottom: 38px;
+
+    @include mq($m) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__desc {
+    p {
+      font-size: 18px;
+      line-height: 1.4;
+
+      @include mq($m) {
+        font-size: 16px;
+        line-height: 1.32;
+      }
+    }
+
+    p + p {
+      margin-top: 38px;
+
+      @include mq($m) {
+        margin-top: 20px;
+      }
+    }
+  }
+
+  &__btn {
+    margin-top: 82px;
+    
+    @include mq($m) {
+      margin-top: 24px;
+    }
+  }
+}

@@ -1,0 +1,73 @@
+.reviews {
+
+  @include mq($ms) {
+    display: none;
+  }
+
+  &__title {
+    margin-bottom: 60px;
+  }
+
+  &__platforms {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 60px;
+  }
+
+  &__platform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 12px;
+
+    &:not(:last-of-type) {
+      border-right: 1px solid #CECECE;
+    }
+
+    &-details {
+      max-width: 257px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &-comments {
+      font-size: 16px;
+      color: #909090;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+
+      &::before {
+        content: '';
+        width: 32px;
+        height: 32px;
+        mask: url('../img/icons/comment.svg') center center / contain no-repeat;
+        -webkit-mask: url('../img/icons/comment.svg') center center / contain no-repeat;
+        background-color: currentColor;
+      }
+    }
+
+    &-rating {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+
+      &-stars {
+        display: flex;
+        align-items: center;
+        gap: 3px;
+      }
+
+      &-star {
+        width: 18px;
+        height: 18px;
+      }
+    }
+
+    &-count {
+      font-size: 18px;
+    }
+  }
+}

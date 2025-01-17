@@ -1,0 +1,34 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: auto; 
+  padding: 15px 18px;
+  border: 1px solid cl(accent);
+  background-color: cl(accent);
+  color: cl(whte);
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: 500;
+  letter-spacing: -1px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: .25s ease-in-out;
+
+  svg {
+    color: cl(whte);
+  }
+
+  @media(any-hover: hover) {
+    &:hover {
+      background-color: cl(accent-light);
+      border-color: cl(accent-light);
+      color: cl(whte);
+
+      svg {
+        color: cl(whte);
+      }
+    }
+  }
+}

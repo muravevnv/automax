@@ -1,0 +1,61 @@
+.hero {
+  padding: 44px 0 0;
+
+  @media(max-width: 767px) {
+    padding: 32px 0 40px;
+    position: relative;
+  }
+
+  &__banner {
+    position: relative;
+    padding: 46px 56px;
+    z-index: 1;
+    color: var(--color-whte);
+
+    @media(max-width: 767px) {
+      position: static;
+      padding: 0;
+    }
+  }
+
+  &__bg {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 561px;
+    inset: 0;
+    z-index: -1;
+
+    @media(max-width: 767px) {
+      height: 100%;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 20px;
+
+      @media(max-width: 767px) {
+        border-radius: 0;
+      }
+    }
+  }
+
+  &__title {
+    margin-bottom: 50px;
+
+    @media(max-width: 767px) {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__calculator {
+    border-radius: 16px;
+    overflow: hidden;
+
+    picture, img {
+      width: 100%;
+    }
+  }
+}

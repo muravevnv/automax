@@ -1,0 +1,25 @@
+header.header 
+  .container 
+    a.header__logo(href="#") 
+      img(src="./img/logo.svg", alt="")
+    button(type="button").header__burger.js-menu-open
+    .header__menu.js-menu
+      button(type="button").header__menu-close.js-menu-close
+      .header__region 
+        .header__region-current(style="--icon: url('../img/icons/navigation-arrow.svg');") Ангарск
+        .header__region-dropdown
+      nav.header__nav 
+        ul.header__nav-list 
+          li.header__nav-item 
+            a(href="#") Аренда
+          li.header__nav-item 
+            a(href="#") Выкуп
+          li.header__nav-item 
+            a(href="#") Информация
+          li.header__nav-item 
+            a(href="#") Контакты
+      .header__socials.socials 
+        a(href="#" style="--icon: url('../img/icons/whatsapp.svg'); --bg-color: #06AF2B").socials__item 
+        a(href="#" style="--icon: url('../img/icons/tg.svg'); --bg-color: #2DA6DF").socials__item 
+        a(href="#" style="--icon: url('../img/icons/vk.svg'); --bg-color: #0077FF").socials__item 
+      a.header__tel(href="tel:+79091234567 " style="--icon: url('../img/icons/tel-ring.svg');") +7 909 123 45 67  

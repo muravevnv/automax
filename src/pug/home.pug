@@ -1,0 +1,16 @@
+doctype html
+html(lang="en")
+  include mixins/_mixins
+  include includes/head
+  +head('Главная')
+  body
+    include components/header
+    main
+      include sections/hero/index
+      include sections/our-services/index
+      include sections/our-products/index
+      include sections/rent-conditions/index
+      include sections/reviews/index
+      include sections/about-us/index
+    include components/footer
+    include includes/scripts

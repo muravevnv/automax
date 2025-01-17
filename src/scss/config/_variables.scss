@@ -1,0 +1,49 @@
+$colors: (
+  "whte": #fff,
+  "blck": #000000,
+  "text": #37383F,
+  "alt": #636773,
+  "primary": #37383F,
+  "accent": #FF787C,
+  "accent-light": #FFBDB6,
+  "action": #FF9263,
+  "send": #F8E4CF,
+  "send-light": #F8F6F3,
+  "secondary": #5A6584,
+  "third": #524656,
+  "third-light": #A68D9A,
+  "border": #DBDBDB,
+  "gray-300": #C9C9C9,
+  "gray-500": #7B7B7B,
+  "gray-600": #636773,
+);
+
+
+:root {
+  @if $colors {
+    @each $key, $value in $colors {
+      --color-#{$key}: #{$value};
+      --color-#{$key}--rgb: #{hextorgb($value)};
+    }
+  }
+  --container-width: 1480px;
+  --container-pad: 20px;
+  --font-main: "Commissioner", "Helvetica", "Arial", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --font-title: "Commissioner", "Helvetica", "Arial", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --font-size: 16px;
+  --transition: 0.3s ease-in-out;
+}
+
+$xs: 479.98px;
+$s: 620px;
+$m: 767.98px;
+$ms: 1023.98px;
+$mt: 1279.98px;
+$l: 1365.98px;
+$ls: 1439.98px;
+$lt: 1599.98px;
+$xl: 1919.98px;
+$xls: 2559px;
+$tablet: 991.98px; // Планшеты
+$mobile: 767.98px; // Телефоны L
+$mobileSmall: 479.98px; // Телефоны S

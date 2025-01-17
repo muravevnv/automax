@@ -1,0 +1,39 @@
+.our-services {
+
+  @media(max-width: 1023px) {
+    display: none;
+  }
+
+  &__list {
+    max-width: 1380px;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+
+  &__item {
+    padding: 14px 0 30px;
+    font-size: 18px;
+
+    &:not(:last-of-type) {
+      padding-right: 30px;
+      border-right: 1px solid var(--color-border);
+    }
+
+    &-title {
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 36px;
+    }
+
+    &-desc {
+      margin-bottom: 24px;
+    }
+
+    &-details {
+      font-weight: 600;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+@import 'libs/swiper';
+
+//Config
+@import 'config/mixins';
+@import 'config/variables';
+@import 'config/reset';
+@import 'config/fonts';
+@import 'config/global';
+@import 'config/typography';
+@import 'config/form';
+@import 'config/common';
+
+//Components
+
+@import 'components/btn';
+@import 'components/header';
+@import 'components/footer';
+@import 'components/modal';
+
+//Sections
+@import '../pug/sections/hero/style.scss';
+@import '../pug/sections/our-services/style.scss';
+@import '../pug/sections/our-products/style.scss';
+@import '../pug/sections/rent-conditions/style.scss';
+@import '../pug/sections/about-us/style.scss';
+@import '../pug/sections/reviews/style.scss';
