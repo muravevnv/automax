@@ -31,6 +31,39 @@
   gap: 16px;
   padding-bottom: 16px;
 
+  &__main {
+    position: relative;
+    overflow: hidden;
+    border-radius: 16px;
+
+    @media(any-hover: hover) {
+
+      &:hover {
+        .product-card__badge {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  &__badge {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #FF787CCC;
+    backdrop-filter: blur(10px);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    color: cl(whte);
+    border-radius: 5px;
+    padding: 15px 12px;
+    opacity: 0;
+    transition: 0.25s ease-in-out;
+    cursor: pointer;
+  }
+
   &__img {
     display: flex;
     align-items: center;
@@ -49,14 +82,6 @@
       height: 220px;
     }
 
-    @media(any-hover: hover) {
-
-      &:hover {
-        img {
-          transform: scale(1.1);
-        }
-      }
-    }
 
     img, picture {
       display: block;
@@ -66,8 +91,6 @@
 
     img {
       object-fit: cover;
-      transform: scale(1);
-      transition: transform 0.25s ease-in-out;
     }
   }
 

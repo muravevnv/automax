@@ -11,4 +11,11 @@ document.addEventListener("DOMContentLoaded", () => {
   $('.js-menu-close').on('click', function () {
     $('.js-menu').removeClass('_is-open');
   })
+
+  if(window.matchMedia('(max-width: 1023px)').matches) {
+    $('.dropdown__item').on('click', function (e) {
+      e.preventDefault();
+      $(this).next().slideToggle()
+    })
+  }
 });
